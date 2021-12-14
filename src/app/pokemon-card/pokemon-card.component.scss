@@ -1,0 +1,26 @@
+.pokemon-card{
+    padding: 10px 10px;
+    font-family: "Signika", Arial, sans-serif;
+}
+
+.pokemon-card-img{
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+.pokemon-card-img img{
+    width:180px;
+    height: 180px;
+}
+
+.pokemon-card-name{
+    padding: 0 10px;
+    color: #313131;
+    font-size: 145%;
+    margin-bottom: 5px;
+}
+
+.pokemon-card-type{
+    display: flex;
+    padding: 3px;
+    margin: 0 5px;
+}
