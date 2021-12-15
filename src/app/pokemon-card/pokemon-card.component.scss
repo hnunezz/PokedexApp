@@ -24,6 +24,7 @@
     color: #313131;
     font-size: 145%;
     margin-bottom: 5px;
+    text-transform: capitalize;
 }
 
 .pokemon-card-type{
@@ -32,6 +33,7 @@
     margin: 0 5px;
 }
 .pokemon-card-types{
+    text-transform: capitalize;
     border-radius: 20px;
     padding: 0px 20px;
     line-height: 18px;

@@ -9,14 +9,15 @@
 
 # POKEDEXAPP
     # Funcionalidades
-        - LISTAR
+        //- LISTAR
         - BUSCAR
         - BATALHA
 
     #  ToDo
-        Layout Lista
-        Layout Card
-        Funcao Listar
+        //Layout Lista
+        //Layout Card
+        //Funcao Listar
+        Funcao Mostrar Mais
         Layout Buscar
         Funçao Buscar
         Layout Batalha
@@ -35,5 +36,8 @@
         Desenvolver funcionalidade de selecao e aplicar a probabilidade
             Indicar pokemon vencedor
         Desenvolver funcionalidade botao pokemon aleatorio  
+
+
+
         
     
