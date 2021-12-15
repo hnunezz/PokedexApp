@@ -1,7 +1,7 @@
 # TAGS
 - feat: novas funcionalidades
 - fix: bug/correcao
-- refactor: limpeza de codigo
+- refactor: limpeza de codigo/pequenas alteracoes
 - path: conjunto de funcionalidade
 - minor: grupo de conjunto de funcionalidades
 - major: parte do projeto pra commit

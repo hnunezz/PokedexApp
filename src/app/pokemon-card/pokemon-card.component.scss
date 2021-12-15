@@ -31,10 +31,7 @@
     padding: 3px;
     margin: 0 5px;
 }
-
-/* COLOR TYPES */
-.pokemon-card-types-grass{
-    background-color: #9bcc50;
+.pokemon-card-types{
     border-radius: 20px;
     padding: 0px 20px;
     line-height: 18px;
@@ -43,6 +40,12 @@
     width: 38.4375%;
     float: left;
     text-align: center;
+}
+
+/* -------------- COLOR TYPES --------------*/
+
+.pokemon-card-types-grass{
+    background-color: #9bcc50;
     color: #212121
     
 }
