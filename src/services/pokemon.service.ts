@@ -12,7 +12,7 @@ export class PokemonService {
 
 
   constructor(private httpClient : HttpClient) { 
-    const URL = "https://pokeapi.co/api/v2/pokemon/";
+    const URL = "https://pokeapi.co/api/v2/pokemon/?limit=50";
 
     this.httpClient.get<any>(URL).pipe(
       map(value => value.results),

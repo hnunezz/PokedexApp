@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Pokemon } from 'src/models/Pokemons.models';
+import { getPokemonImage,getPokemonNumber, Pokemon } from 'src/models/Pokemons.models';
 import { PokemonListComponent } from '../pokemon-list/pokemon-list.component';
 
 @Component({
@@ -11,4 +11,7 @@ export class PokemonCardComponent{
 
   @Input() public pokemon !: Pokemon;
 
+  public getPokemonImage = getPokemonImage;
+
+  public getPokemonNumber = getPokemonNumber;
 }
