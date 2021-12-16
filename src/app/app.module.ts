@@ -12,7 +12,7 @@ import { PokemonService } from 'src/services/pokemon.service';
   declarations: [
     AppComponent,
     PokemonListComponent,
-    PokemonCardComponent,
+    PokemonCardComponent
   ],
   imports: [
     BrowserModule,

@@ -9,10 +9,10 @@ import { Pokemon } from 'src/models/Pokemons.models';
 export class PokemonService {
 
   public pokemons: Pokemon[] = [];
-
+  public pokemonsQuant:string = "50"; 
 
   constructor(private httpClient : HttpClient) { 
-    const URL = "https://pokeapi.co/api/v2/pokemon/?limit=50";
+    const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=' + `${this.pokemonsQuant}`;
 
     this.httpClient.get<any>(URL).pipe(
       map(value => value.results),

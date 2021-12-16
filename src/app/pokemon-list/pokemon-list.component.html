@@ -7,7 +7,14 @@
     <title>POKELIST</title>
 </head>
 <body>
+    <header>
+        <img class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png">
+    </header>
     <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon"></app-pokemon-card>
+    <div class="BTNUp" *ngIf="showButton">
+        <img class="IMGSeta" src="https://cdn-icons-png.flaticon.com/512/59/59043.png">
+    </div>
+    <footer></footer>
 </body>
 </html>
 

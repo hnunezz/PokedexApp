@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostListener, Inject, OnInit } from '@angular/core';
 import { Pokemon } from 'src/models/Pokemons.models';
 import { Type } from 'src/models/Types.models';
 import { PokemonService } from 'src/services/pokemon.service';
@@ -8,14 +9,23 @@ import { PokemonService } from 'src/services/pokemon.service';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.scss']
 })
-export class PokemonListComponent implements OnInit {
+export class PokemonListComponent{
 
   public Pokemons : Pokemon[] = [];
+  public showButton:boolean = false;
 
 
-  constructor(public pokemonService : PokemonService) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    public pokemonService : PokemonService
+    ) {}
 
-  ngOnInit(): void {
-  }
+  @HostListener('window:scroll')
+    onWindowScroll(): void
+    {
+      const yOffSet = window.pageYOffset;
+      const scrollTop = this.document.documentElement.scrollTop;
+      this.showButton = (yOffSet || scrollTop) > 510;
+    }
 
 }
