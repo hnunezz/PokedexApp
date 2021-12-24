@@ -2,10 +2,15 @@
     <div class="pokemon-menu" (click)="aberto = !aberto">
     </div>
     <div class="menu-title">
-        <label style="padding-top:110px;">HOME </label>
-        <label style="padding-top:20px;">BATTLE </label>
+        <div class="titles" style="padding-top:110px;">HOME </div>
+        <div class="titles" style="padding-top:20px;">BATTLE </div>
     </div>
     <div class="menu-link">
-
+        <div class="titles-perfil-Git" (click)="goToGithub(url_1)">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" style="width: 79px;">
+        </div>
+        <div class="titles-perfil-Link" (click)="goToLinkedin(url_2)">
+            <img src="https://mekes.com/app/uploads/2020/12/linkedin-logo.png" style="width: 79px;">
+        </div>
     </div>
 </div>
