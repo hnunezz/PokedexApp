@@ -9,10 +9,10 @@ import { Pokemon } from 'src/models/Pokemons.models';
 export class PokemonService {
 
   public pokemons: Pokemon[] = [];
-  public pokemonsQuant:string = "50"; 
+  public pokemonsQuant:string = "151"; 
 
   constructor(private httpClient : HttpClient) { 
-    const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=' + `${this.pokemonsQuant}`;
+     const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=' + `${this.pokemonsQuant}`;
 
     this.httpClient.get<any>(URL).pipe(
       map(value => value.results),
@@ -23,10 +23,11 @@ export class PokemonService {
       }),
       mergeMap(value => value),
     ).subscribe((result: any) => this.pokemons[result.id] = {
+      
       image: result.sprites.front_default,
       number: result.id,
       name: result.name,
-      types: result.types.map((t:any) => t.type.name),
+      types: result.types.map((t:any) => t.type.name) 
     });
   }
 }

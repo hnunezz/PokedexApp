@@ -16,6 +16,7 @@ body
     margin-left: 10%;
     margin-right: 10%;
 }
+
 /*------ CORPO ------*/
 .BTNUp
 {
@@ -42,11 +43,75 @@ body
 {
     width: 35px;
     height: 35px;
-    margin-left: 13px;
-    margin-top: 12px;
+    margin-left: 11px;
+    margin-top: 10px;
 }
  
 .IMGHeadear{
     width: 450px; 
     height: 240px;
+}
+
+
+    $primary: #0062b0;
+    $secondary: #ffcc00;
+    $white: #000;
+    $gray: #313131;
+
+.form__group {
+    font-family: "Signika", Arial, sans-serif;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 28%;
+    top: -116px;
+    left: 62%;
+}
+
+.form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #f2f2f2;
+    outline: 0;
+    font-size: 1.3rem;
+    color: $white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $gray;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,98,176,1) 23%, rgba(143,157,77,0) 48%, rgba(255,204,0,1) 77%);
+  border-image-slice: 1;
 }

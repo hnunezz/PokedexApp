@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POKELIST</title>
-</head>
 <body>
     <header>
-        <img class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png">
-    </header>
-    <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon"></app-pokemon-card>
-    <div class="BTNUp" *ngIf="showButton">
-        <img class="IMGSeta" src="https://cdn-icons-png.flaticon.com/512/59/59043.png">
-    </div>
+        <div> 
+            <img id="IMGHeader" class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png">
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                <label for="name" class="form__label">Buscar</label>
+              </div>
+        </div>
+        <!-- <img id="IMGHeader" class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png"> -->
+    </header> 
+            <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon"></app-pokemon-card>
+        <div class="BTNUp" *ngIf="showButton" (click)="(toTop())">
+            <img class="IMGSeta" src="https://cdn-icons-png.flaticon.com/512/59/59043.png">
+        </div>
     <footer></footer>
 </body>
-</html>
+
 
