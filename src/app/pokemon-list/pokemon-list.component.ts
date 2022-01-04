@@ -14,15 +14,14 @@ export class PokemonListComponent{
 
   public Pokemons : Pokemon[] = [];
   public showButton:boolean = false;
-
+  private setAllPokemons:any = this.pokemonService.pokemons;
   private scrollHeight = 500;
 
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     public pokemonService : PokemonService,
-    private spinner : NgxSpinnerService
-    ) {}
+    ) { }
 
   @HostListener('window:scroll')
     onWindowScroll(): void
@@ -36,5 +35,10 @@ export class PokemonListComponent{
       this.document.documentElement.scrollTop = 0;
     }
 
-    
+    search(value : string){
+      const filter = this.setAllPokemons.filter((res:any) =>{
+        return !res.name.indexOf(value.toLowerCase());
+      });
+      this.pokemonService.pokemons = filter;
+    }
 }

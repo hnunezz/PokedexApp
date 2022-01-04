@@ -1,17 +1,19 @@
 .pokemon-painel {
     background: #0062b0;
     height: 100%;
-    width: -300px;
+    width: 300px;
     //width: 300px;
     position: fixed;
     z-index: 1;
-    right: -3px;
+    right: -300px;
     top: 0px;
+    transition: 0.5s;
 }
 
 .pokemon-painel[aberto='true'] {
-    width: 300px;
-    transition-delay: 0.5s
+    //width: 300px;
+    transition: 0.5s;
+    right: 0px;
 }
 
 .pokemon-menu{
@@ -26,51 +28,66 @@
 }
 
 .menu-title{
-    height: 62%;
     position: absolute;
-    margin-left: 27%;
+    margin-left: 28%;
+    margin-top: 54px;
 }
 .titles{
     font-family: "Signika", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     place-items: center;
-    font-size: 47px;
+    font-size: 59px;
     color: #f2f2f2;
-}
-.titles:hover{
-    color: #ffcc00;
     cursor: pointer;
 }
 
 .menu-link{
-    height: 38%;
-    margin-top: 200%;
-    position: absolute;
-    width: 100%;
+    margin-top: 269%;
+    margin-left: 10px;
 }
 
 .titles-perfil-Git{
-    width: 80px;
-    height: 80px;
     border-radius: 100%;
     margin-left: 56px;
     margin-top: 172px;
+    
 }
 .titles-perfil-Link{
-    width: 80px;
-    height: 80px;
     border-radius: 100%;
-    background: white;
-    margin-left: 169px;
+    margin-left: 176px;
     margin-top: -79px;
 }
 
-.titles-perfil-Git:hover{
-    cursor: pointer;
+.IconHover:hover{
+    fill:#ffcc00 !important;
+    color: #ffcc00 !important;
+    cursor: pointer
 }
 
-.titles-perfil-Link:hover{
-    cursor: pointer;
+.BTNFechado-icon{
+    width: 70px;
+    height: 42px;
+    margin-top: 8%;
+    transition: 0.5s;
 }
 
+.BTNAberto-icon{
+    width: 70px;
+    height: 42px;
+    margin-top: 8%;
+    transition: 0.5s;
+    margin-left: -10px;
+
+}
+
+.Mat-icon-title{
+    width: 327px !important;
+    height: 49px !important;
+    fill: white
+}
+
+.titles-dzn{
+    position: absolute;
+    margin-left: -19px;
+}
