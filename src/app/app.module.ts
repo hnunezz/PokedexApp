@@ -9,6 +9,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
 import { PokemonService } from 'src/services/pokemon.service';
 import { PokemonMenuComponent } from './pokemon-menu/pokemon-menu.component';
+import { PokemonBattleComponent } from './pokemon-battle/pokemon-battle.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { PokemonMenuComponent } from './pokemon-menu/pokemon-menu.component';
     AppComponent,
     PokemonListComponent,
     PokemonCardComponent,
-    PokemonMenuComponent
+    PokemonMenuComponent,
+    PokemonBattleComponent
   ],
   imports: [
     BrowserModule,
