@@ -3,11 +3,9 @@
         <!-- <img [src]="pokemon.image" [alt]="pokemon.number"> -->
         <img [src]="getPokemonImage(pokemon)" [alt]="pokemon.number" draggable="false">
     </div>
-
     <div class="pokemon-card-name">
         {{pokemon.name}}
     </div>
-
     <div class="pokemon-card-type">
         <div class="pokemon-card-types" *ngFor="let type of pokemon.types" [class]="'pokemon-card-types-' + type.toLowerCase()">{{type}}</div>
     </div>

@@ -1,7 +1,15 @@
+/*------ UTIL ------*/
+$primary: #0062b0;
+  $secondary: #ffcc00;
+    $black: #000;
+      $gray: #313131;
+        $white: #fff;
+
+
 /*------ GERAL ------*/
 header
 {
-    background: white;
+    background: $white;
     width: 96.5%;
     height: 228px;
     position: relative;
@@ -17,6 +25,7 @@ body
     margin-right: 10%;
 }
 
+
 /*------ CORPO ------*/
 .BTNUp
 {
@@ -26,8 +35,8 @@ body
     height: 60px;
     left: 5%;
     top: 86%;
-    background: linear-gradient(red 50%, white 50%);
-    border: solid 2px #000000;
+    background: linear-gradient(red 50%, $white 50%);
+    border: solid 2px $black;
     animation: fadeIn 2s;
 }
 
@@ -52,19 +61,8 @@ body
     height: 240px;
 }
 
+/*------ INPUT ------*/
 
-    $primary: #0062b0;
-    $secondary: #ffcc00;
-    $white: #000;
-    $gray: #313131;
-
-    // .form__group {
-    //   font-family: "Signika", Arial, sans-serif;
-    //   // padding: 15px 0 0;
-    //   margin-top: 10px;
-    //   // top: -116px;
-    //   // left: 62%;
-    //   }
 .form__group {
     font-family: "Signika", Arial, sans-serif;
     position: relative;
@@ -81,7 +79,7 @@ body
     border-bottom: 2px solid #f2f2f2;
     outline: 0;
     font-size: 1.3rem;
-    color: $white;
+    color: $black;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;

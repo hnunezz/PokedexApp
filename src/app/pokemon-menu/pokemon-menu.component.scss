@@ -1,5 +1,13 @@
+/*------ UTIL ------*/
+$primary: #0062b0;
+  $secondary: #ffcc00;
+    $black: #000;
+      $gray: #313131;
+        $white: #fff;
+
+  /*------ PAINEL ------*/      
 .pokemon-painel {
-    background: #0062b0;
+    background: $primary;
     height: 100%;
     width: 300px;
     //width: 300px;
@@ -15,9 +23,10 @@
     transition: 0.5s;
     right: 0px;
 }
+  /*------ MENU ------*/   
 
 .pokemon-menu{
-    background: #0062b0;
+    background: $primary;
     width: 55px;
     height: 50px;
     position: relative;
@@ -42,6 +51,17 @@
     cursor: pointer;
 }
 
+.Mat-icon-title{
+    width: 327px !important;
+    height: 49px !important;
+    fill: white
+}
+
+.titles-dzn{
+    position: absolute;
+    margin-left: -19px;
+}
+
 .menu-link{
     margin-top: 269%;
     margin-left: 10px;
@@ -60,11 +80,11 @@
 }
 
 .IconHover:hover{
-    fill:#ffcc00 !important;
-    color: #ffcc00 !important;
+    fill:$secondary !important;
+    color: $secondary !important;
     cursor: pointer
 }
-
+  /*------ BTN ------*/ 
 .BTNFechado-icon{
     width: 70px;
     height: 42px;
@@ -81,13 +101,3 @@
 
 }
 
-.Mat-icon-title{
-    width: 327px !important;
-    height: 49px !important;
-    fill: white
-}
-
-.titles-dzn{
-    position: absolute;
-    margin-left: -19px;
-}

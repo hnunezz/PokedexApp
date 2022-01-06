@@ -1,19 +1,17 @@
 <body>
     <header>
-        <div> 
-            <img id="IMGHeader" class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png">
+        <img id="IMGHeader" class="IMGHeadear" src="https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png" >
             <div class="form__group field">
-                <input type="input" class="form__field" #input (keypress)="search(input.value)" placeholder="Name" name="name" id='name'  autocomplete = "off" required />
+                <input type="input" class="form__field" #input (keypress)="search(input.value)" placeholder="Name" name="name" id='name' autocomplete ="off" required />
                 <label for="name" class="form__label">Buscar</label>
-              </div>
-        </div>
-
+            </div>
     </header> 
-            <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon"></app-pokemon-card>
+            <app-pokemon-card *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon" onselectstart="return false"></app-pokemon-card>
         <div class="BTNUp" *ngIf="showButton" (click)="(toTop())">
             <img class="IMGSeta" src="https://cdn-icons-png.flaticon.com/512/59/59043.png">
         </div>
 </body>
-<app-pokemon-menu></app-pokemon-menu>
+
+<app-pokemon-menu onselectstart="return false"></app-pokemon-menu>
 
 

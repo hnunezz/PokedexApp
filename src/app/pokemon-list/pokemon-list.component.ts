@@ -14,6 +14,7 @@ export class PokemonListComponent{
 
   public Pokemons : Pokemon[] = [];
   public showButton:boolean = false;
+  
   private setAllPokemons:any = this.pokemonService.pokemons;
   private scrollHeight = 500;
 
@@ -28,7 +29,7 @@ export class PokemonListComponent{
     {
       const yOffSet = window.pageYOffset;
       const scrollTop = this.document.documentElement.scrollTop;
-      this.showButton = (yOffSet || scrollTop) > this.scrollHeight;
+        this.showButton = (yOffSet || scrollTop) > this.scrollHeight;
     }
 
     toTop():void {
