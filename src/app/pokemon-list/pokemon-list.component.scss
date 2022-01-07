@@ -7,24 +7,13 @@ $primary: #0062b0;
 
 
 /*------ GERAL ------*/
-header
-{
-    background: $white;
-    width: 96.5%;
-    height: 228px;
-    position: relative;
-    border-block-end: 1px solid #f2f2f2;
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  border-block-end: 1px solid #f2f2f2;
 }
-body
-{
-    display: flex;
-    flex-wrap: wrap;
-    // place-content: space-evenly;
-    margin: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 
 /*------ CORPO ------*/
 .BTNUp
@@ -59,6 +48,7 @@ body
 .IMGHeadear{
     width: 450px; 
     height: 240px;
+    margin-left: 10%;
 }
 
 /*------ INPUT ------*/
@@ -67,14 +57,12 @@ body
     font-family: "Signika", Arial, sans-serif;
     position: relative;
     padding: 15px 0 0;
-    margin-top: 10px;
+    margin: 80px 20px 0px;
     width: 28%;
-    top: -116px;
-    left: 62%;
 }
 
 .form__field {
-    width: 100%;
+    width: 78%;
     border: 0;
     border-bottom: 2px solid #f2f2f2;
     outline: 0;
@@ -119,4 +107,44 @@ body
   border-width: 3px;
   border-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,98,176,1) 23%, rgba(143,157,77,0) 48%, rgba(255,204,0,1) 77%);
   border-image-slice: 1;
+}
+
+/*------ POKEMON_LIST ------*/
+.Pokemon-list-class{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.Pokemon-card-component {
+  width: 300px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.Pokemon-card-component:first-child {
+  display: none;
+}
+
+/*------ MEDIAQUERY(MOBILE) ------*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: 332px;
+    width: 90%;
+    border-block-end: 0px solid #fff;
+  }
+  .form__group{
+   width: 90%;
+  }
+  .form__field{
+    width: 112%;
+  }
+  .IMGHeadear{
+    width: 361px;
+    height: 200px;
+    margin-left: 10%;
+  }
 }

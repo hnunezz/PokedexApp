@@ -10,7 +10,7 @@
 # POKEDEXAPP
     # Funcionalidades
         //- LISTAR
-        - BUSCAR
+        //- BUSCAR
         - BATALHA
 
     #  ToDo
@@ -18,8 +18,8 @@
         //Layout Card
         //Funcao Listar
         Funcao Mostrar Mais
-        Layout Buscar
-        Funçao Buscar
+        //Layout Buscar
+        //Funçao Buscar
         Layout Batalha
         Funçao Batalha
 

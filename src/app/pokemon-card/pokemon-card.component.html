@@ -1,6 +1,5 @@
-<div class="pokemon-card" *ngIf="pokemon">
+<div class="pokemon-card" id="pokemon-card" *ngIf="pokemon">
     <div class="pokemon-card-img">
-        <!-- <img [src]="pokemon.image" [alt]="pokemon.number"> -->
         <img [src]="getPokemonImage(pokemon)" [alt]="pokemon.number" draggable="false">
     </div>
     <div class="pokemon-card-name">
@@ -10,3 +9,4 @@
         <div class="pokemon-card-types" *ngFor="let type of pokemon.types" [class]="'pokemon-card-types-' + type.toLowerCase()">{{type}}</div>
     </div>
 </div>
+

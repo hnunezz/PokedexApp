@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 
 import { getPokemonImage,getPokemonNumber, Pokemon } from 'src/models/Pokemons.models';
 import { PokemonListComponent } from '../pokemon-list/pokemon-list.component';
@@ -15,6 +16,9 @@ export class PokemonCardComponent{
   public getPokemonImage = getPokemonImage;
 
   public getPokemonNumber = getPokemonNumber;
+
+  constructor(@Inject(DOCUMENT) private document: Document){}
+
 
 }
 
