@@ -101,3 +101,14 @@ $primary: #0062b0;
 
 }
 
+/*------ MEDIAQUERY(MOBILE) ------*/
+
+@media (max-width: 768px) {
+    .menu-link {
+        margin-top: 233%;
+        margin-left: 9px;
+    }
+    .menu-title{
+        margin-left: 24%;
+    }
+  }

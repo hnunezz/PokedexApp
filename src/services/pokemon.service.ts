@@ -22,7 +22,7 @@ export class PokemonService {
         );
       }),
       mergeMap(value => value),
-    ).subscribe((result: any) => this.pokemons[result.id] = {
+    ).subscribe((result: any) => this.pokemons[result.id - 1] = {
       
       image: result.sprites.front_default,
       number: result.id,

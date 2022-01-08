@@ -1,6 +1,6 @@
 <div class="pokemon-card" id="pokemon-card" *ngIf="pokemon">
     <div class="pokemon-card-img">
-        <img [src]="getPokemonImage(pokemon)" [alt]="pokemon.number" draggable="false">
+        <img [src]="getPokemonImage(pokemon)" [alt]="getPokemonNumber(pokemon)" draggable="false">
     </div>
     <div class="pokemon-card-name">
         {{pokemon.name}}

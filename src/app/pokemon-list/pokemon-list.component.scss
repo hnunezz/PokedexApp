@@ -123,9 +123,9 @@ header {
   margin: 20px;
 }
 
-.Pokemon-card-component:first-child {
-  display: none;
-}
+// .Pokemon-card-component:first-child {
+//   display: none;
+// }
 
 /*------ MEDIAQUERY(MOBILE) ------*/
 
@@ -141,6 +141,9 @@ header {
   }
   .form__field{
     width: 112%;
+  }
+  .form__label{
+    left: 136px;
   }
   .IMGHeadear{
     width: 361px;
