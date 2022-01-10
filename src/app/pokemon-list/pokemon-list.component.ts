@@ -36,10 +36,4 @@ export class PokemonListComponent{
       this.document.documentElement.scrollTop = 0;
     }
 
-    search(value : string){
-      const filter = this.setAllPokemons.filter((res:any) =>{
-        return !res.name.indexOf(value.toLowerCase());
-      });
-      this.pokemonService.pokemons = filter;
-    }
 }

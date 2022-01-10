@@ -1,0 +1,104 @@
+.Container-Master{
+    width: 100%;
+    height: 728px;
+    display: flex;
+}
+
+
+
+
+.Container-Selection1{
+    width: 30%;
+    height: 100%;
+    //background: blue;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.Container-Selection2{
+    width: 30%;
+    height: 100%;
+    //background: #89ff08;
+    /* float: right; */
+    margin-right: 15%;
+    margin-left: 5%;
+}
+.Pokemon-Selection{
+    width: 100%;
+    height: 45%;
+    margin: auto;
+    margin-top: 33px;
+    background: #F2F2F2;
+    border-radius: 4px 4px 66px 0px;
+}
+
+
+
+
+.Battle-result{
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    border-radius: 0px 0px 4px 4px;
+    background: #F2F2F2;
+}
+.Battle-result-icon{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.Pokemon-Painel-Selection{
+    width: 82.6%;
+    height: 76%;
+    margin: auto;
+    top: 35px;
+    margin-top: 39px;
+    position: relative;
+    background: #bfbfbf2e;
+    border-radius: 4px 4px 33px 0px;
+    cursor: pointer;
+}
+.Pokemon-Painel-Selection:hover{
+    background: #bfbfbf6b;
+}
+.Pokemon-Painel-Selection:hover .Pokemon-Painel-Selection-P{
+    color: #747474;
+    display: grid;
+}
+
+.Pokemon-Painel-Selection-P{
+    text-align: center;
+    font-size: 26px;
+    font-family: "Signika", Arial, sans-serif;
+    padding-top: 22%;
+    display: none;
+}
+
+
+
+
+
+
+.Pokemon-Fight{
+    width: 153px;
+    height: 64px;
+    background: #d77171;
+    border-radius: 4px;
+    margin-top: 380px;
+    margin-left: -109px;
+    margin-right: -109px;
+}
+
+.Pokemon-Fight:hover{
+    background: #d65a5a;
+    cursor: pointer;
+}
+.Pokemon-Fight-P{
+    font-size: 30px;
+    text-align: center;
+    margin: 22px;
+    font-family: "Signika", Arial, sans-serif;
+    color: white;
+
+}

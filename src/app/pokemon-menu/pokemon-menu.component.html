@@ -4,10 +4,14 @@
         <mat-icon *ngIf="aberto == true" svgIcon="arrow_left" class="BTNAberto-icon"></mat-icon>
     </div>
     <div class="menu-title">
-        <div class="titles titles-dzn" style="padding-top: 110px;padding-block-end: 69px;" routerLink="/" routerLinkActive="selected">Home</div>
-            <mat-icon svgIcon="home" class="IconHover Mat-icon-title" style="margin-top: 98px;"></mat-icon>
-        <div class="titles titles-dzn" style="padding-top: 44px;" routerLink="/battle" routerLinkActive="selected">Battle </div>
-            <mat-icon svgIcon="battle" class="IconHover Mat-icon-title" style="margin-top: 31px;"></mat-icon>
+        <div class="titles titles-dzn" style="padding-top: 110px;" routerLink="/" >
+            Home
+            <mat-icon svgIcon="home" class="Mat-icon-title " style="margin-top: 98px;" [style.fill]="teste == 1 ?  '#ffcc00' : 'white'"></mat-icon>
+        </div>
+        <div class="titles titles-dzn" routerLink="/PokeBattle" routerLinkActive="selected" (click)="teste = 0">
+            Battle
+            <mat-icon svgIcon="battle" class="Mat-icon-title " style="margin-top: 31px;" [style.fill]="teste == 0 ?  '#ffcc00' : '#fff'"></mat-icon>
+        </div>
     </div>
     <div class="menu-link">
         <div class="titles-perfil-Git" (click)="goToGithub(url_1)">

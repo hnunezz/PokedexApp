@@ -12,6 +12,7 @@
         //- LISTAR
         //- BUSCAR
         - BATALHA
+        // - RESPONSIVO
 
     #  ToDo
         //Layout Lista
@@ -22,6 +23,7 @@
         //Funçao Buscar
         Layout Batalha
         Funçao Batalha
+        Funcao Modo Claro/Escuro
 
     # Card
         Desenvolver funcionalidade para os pokemon-card-type

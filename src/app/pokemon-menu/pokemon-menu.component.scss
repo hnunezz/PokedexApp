@@ -10,7 +10,6 @@ $primary: #0062b0;
     background: $primary;
     height: 100%;
     width: 300px;
-    //width: 300px;
     position: fixed;
     z-index: 1;
     right: -300px;
@@ -19,7 +18,7 @@ $primary: #0062b0;
 }
 
 .pokemon-painel[aberto='true'] {
-    //width: 300px;
+    width: 300px;
     transition: 0.5s;
     right: 0px;
 }
@@ -38,27 +37,25 @@ $primary: #0062b0;
 
 .menu-title{
     position: absolute;
-    margin-left: 28%;
+    margin-left: 22%;
     margin-top: 54px;
 }
 .titles{
     font-family: "Signika", Arial, sans-serif;
-    display: flex;
     flex-direction: column;
     place-items: center;
     font-size: 59px;
     color: #f2f2f2;
-    cursor: pointer;
+    cursor: default;
 }
 
 .Mat-icon-title{
-    width: 327px !important;
+    width: 50px !important;
     height: 49px !important;
-    fill: $white
+    cursor: pointer;
 }
 
 .titles-dzn{
-    position: absolute;
     margin-left: -19px;
 }
 
@@ -84,6 +81,8 @@ $primary: #0062b0;
     color: $secondary !important;
     cursor: pointer
 }
+
+
   /*------ BTN ------*/ 
 .BTNFechado-icon{
     width: 70px;

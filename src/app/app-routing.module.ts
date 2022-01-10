@@ -6,7 +6,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 const routes: Routes = [
   { 
-    path: "battle", 
+    path: "PokeBattle", 
     component: PokemonBattleComponent 
   },
   {

@@ -1,2 +1,29 @@
-<p>pokemon-battle works!</p>
+<app-pokemon-header></app-pokemon-header>
+
+    <div class="Container-Master" onselectstart="return false">
+        <div class="Container-Selection1">
+            <div class="Pokemon-Selection">
+                <div class="Pokemon-Painel-Selection">
+                    <p class="Pokemon-Painel-Selection-P">Selecione um Pokemon!</p>
+                </div>
+            </div>
+            <div class="Battle-result" style="float:left">
+                <mat-icon svgIcon="victory-icon" class="Battle-result-icon"></mat-icon>
+            </div>
+        </div>
+        <div class="Pokemon-Fight"> 
+            <p class="Pokemon-Fight-P">Start</p>
+        </div>
+        <div class="Container-Selection2">
+            <div class="Pokemon-Selection" style="border-radius: 4px 4px 0px 66px;">
+                <div class="Pokemon-Painel-Selection" style="border-radius: 4px 4px 0px 33px;">
+                    <p class="Pokemon-Painel-Selection-P">Selecione um Pokemon!</p></div>
+                </div>
+            <div class="Battle-result" style="float:right;border-radius: 0px 0px 4px 4px;">
+                <mat-icon svgIcon="defeat-icon" class="Battle-result-icon"></mat-icon>
+            </div>
+        </div>
+    </div>
+
 <app-pokemon-menu></app-pokemon-menu>
+

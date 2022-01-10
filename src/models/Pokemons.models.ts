@@ -6,6 +6,7 @@ export interface Pokemon
     name: string;
     types: Type[];
     image:string;
+    atk:number;
   }
 
   export function getPokemonImage(pokemon: Pokemon): string {

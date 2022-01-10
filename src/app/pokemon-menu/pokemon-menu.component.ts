@@ -15,6 +15,7 @@ import { Router } from '@angular/router';
 export class PokemonMenuComponent {
 
   public aberto:boolean = false;
+  public teste: number = 1;
   public url_1:string = 'https://github.com/hnunezz';
   public url_2:string = 'https://www.linkedin.com/in/henriquenunes27/';
 
@@ -38,6 +39,6 @@ export class PokemonMenuComponent {
   }
 
   goToLogin() {
-    this.router.navigate(['/battle'])
+    this.router.navigate(['/PokeBattle'])
   }
 }
