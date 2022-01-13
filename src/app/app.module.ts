@@ -13,6 +13,7 @@ import { PokemonBattleComponent } from './pokemon-battle/pokemon-battle.componen
 import { PokemonHeaderComponent } from './pokemon-header/pokemon-header.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

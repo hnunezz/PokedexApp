@@ -17,8 +17,8 @@ export class PokemonCardComponent{
 
   public getPokemonNumber = getPokemonNumber;
 
-  constructor(@Inject(DOCUMENT) private document: Document){}
-
-
+  constructor(@Inject(DOCUMENT) private document: Document ){
+  }
+  
 }
 

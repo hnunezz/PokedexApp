@@ -13,6 +13,7 @@
         //- BUSCAR
         - BATALHA
         // - RESPONSIVO
+        - Adicionar botao como usar battle
 
     #  ToDo
         //Layout Lista

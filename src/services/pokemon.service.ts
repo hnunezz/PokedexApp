@@ -9,7 +9,7 @@ import { Pokemon } from 'src/models/Pokemons.models';
 export class PokemonService {
 
   public pokemons: Pokemon[] = [];
-  public pokemonsQuant:string = "15"; 
+  public pokemonsQuant:string = "151"; 
 
   constructor(private httpClient : HttpClient) { 
      const URL = 'https://pokeapi.co/api/v2/pokemon/?limit=' + `${this.pokemonsQuant}`;
@@ -28,7 +28,7 @@ export class PokemonService {
       number: result.id,
       name: result.name,
       types: result.types.map((t:any) => t.type.name),
-      atk: result.stats[1]
+      atk: result.stats[1].base_stat
     });
   }
 }

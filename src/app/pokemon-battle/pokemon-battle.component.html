@@ -3,27 +3,56 @@
     <div class="Container-Master" onselectstart="return false">
         <div class="Container-Selection1">
             <div class="Pokemon-Selection">
-                <div class="Pokemon-Painel-Selection">
-                    <p class="Pokemon-Painel-Selection-P">Selecione um Pokemon!</p>
+                <div class="Pokemon-Painel-Selection" (click)="Aberto = !Aberto">
+                    <p class="Pokemon-Painel-Selection-P" *ngIf="P1 == undefined">Selecione um Pokemon!</p>
+                    <img class="Pokemon-IMG-Selected" *ngIf="P1 != undefined" [src]="getPokemonImage(P1)" [alt]="getPokemonNumber(P1)" onselectstart="return false">
                 </div>
+                <p *ngIf="P1 != undefined" style="text-transform: capitalize;text-align: center;font-size: 22px;padding-top: 46px;color: #4a4a4a;">{{P1.name}}</p> 
             </div>
             <div class="Battle-result" style="float:left">
-                <mat-icon svgIcon="victory-icon" class="Battle-result-icon"></mat-icon>
+                <mat-icon svgIcon="tie-icon" class="Battle-result-icon"></mat-icon>  
             </div>
         </div>
         <div class="Pokemon-Fight"> 
-            <p class="Pokemon-Fight-P">Start</p>
+            <p class="Pokemon-Fight-P" (click)="lutar(P1,P2)">Start</p>
         </div>
         <div class="Container-Selection2">
-            <div class="Pokemon-Selection" style="border-radius: 4px 4px 0px 66px;">
-                <div class="Pokemon-Painel-Selection" style="border-radius: 4px 4px 0px 33px;">
-                    <p class="Pokemon-Painel-Selection-P">Selecione um Pokemon!</p></div>
+            <div class="Pokemon-Selection" style="border-radius: 4px 4px 0px 66px;" >
+                <div class="Pokemon-Painel-Selection" style="border-radius: 4px 4px 0px 33px;" (click)="Aberto2 = !Aberto2">
+                    <p class="Pokemon-Painel-Selection-P" *ngIf="P2 == undefined">Selecione um Pokemon!</p>
+                    <img class="Pokemon-IMG-Selected" *ngIf="P2 != undefined" [src]="getPokemonImage(P2)" [alt]="getPokemonNumber(P2)">
                 </div>
+                <p *ngIf="P2 != undefined" style="text-transform: capitalize;text-align: center;font-size: 22px;padding-top: 46px;color: #4a4a4a;">{{P2.name}}</p> 
+            </div>
             <div class="Battle-result" style="float:right;border-radius: 0px 0px 4px 4px;">
-                <mat-icon svgIcon="defeat-icon" class="Battle-result-icon"></mat-icon>
+                <mat-icon svgIcon="tie-icon" class="Battle-result-icon"></mat-icon>
             </div>
         </div>
     </div>
+
+<div class="Popup-Master" [attr.Aberto]="Aberto">   
+       <mat-icon svgIcon="close" class="Popup-Close" (click)="Aberto = !Aberto"></mat-icon>
+   <div class="Popup-Body">
+    <div class="Pokemon-list-class" style="width: 100%;
+    display: flex;
+    flex-wrap: wrap;" >
+        <app-pokemon-card (click)="data(P1 = pokemon)" (click)="Aberto = !Aberto" class="Pokemon-card-component" *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px;"></app-pokemon-card>
+    </div>
+   </div>
+
+</div>
+
+<div class="Popup-Master2" [attr.Aberto2]="Aberto2">   
+        <mat-icon svgIcon="close" class="Popup-Close" (click)="Aberto2 = !Aberto2" ></mat-icon>
+    <div class="Popup-Body">
+     <div class="Pokemon-list-class" style="width: 100%;
+     display: flex;
+     flex-wrap: wrap;" >
+         <app-pokemon-card  (click)="data(P2 = pokemon)" (click)="Aberto2 = !Aberto2" class="Pokemon-card-component" *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px;"></app-pokemon-card>
+     </div>
+    </div>
+ 
+ </div>
 
 <app-pokemon-menu></app-pokemon-menu>
 

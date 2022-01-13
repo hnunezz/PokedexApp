@@ -58,6 +58,8 @@
     background: #bfbfbf2e;
     border-radius: 4px 4px 33px 0px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .Pokemon-Painel-Selection:hover{
     background: #bfbfbf6b;
@@ -71,7 +73,7 @@
     text-align: center;
     font-size: 26px;
     font-family: "Signika", Arial, sans-serif;
-    padding-top: 22%;
+    padding-top: 26%;
     display: none;
 }
 
@@ -101,4 +103,59 @@
     font-family: "Signika", Arial, sans-serif;
     color: white;
 
+}
+
+
+
+
+
+
+.Popup-Master[Aberto="false"]{
+display: none;
+}
+.Popup-Master[Aberto="true"]{
+    position: absolute;
+    width: 69%;
+    min-height: 937px;
+    top: 241px;
+    left: 15%;
+    background: #ffffff;
+    border: hidden;
+}
+
+
+.Popup-Close{
+    width: 50px;
+    height: 50px;
+    left: -80px;
+    top: 117.2px;
+    position: absolute;
+}
+.Popup-Close:hover{
+    cursor: pointer;
+}
+
+.Popup-Master2[Aberto2="false"]{
+    display: none;
+    }
+    .Popup-Master2[Aberto2="true"]{
+        position: absolute;
+        width: 69%;
+        min-height: 937px;
+        top: 241px;
+        left: 15%;
+        background: #ffffff;
+        border: hidden;
+    }
+
+
+    .Pokemon-IMG-Selected{
+        width: 244px;
+        margin-left: 54.5px;
+        margin-right: 54.5px;
+    }
+
+.Pokemon-card-component:hover{
+    box-shadow: 0 0 2em #0061b052;
+    cursor: pointer;
 }
