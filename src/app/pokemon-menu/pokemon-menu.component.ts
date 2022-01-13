@@ -16,8 +16,8 @@ export class PokemonMenuComponent {
 
   public aberto:boolean = false;
   public teste: number = 1;
-  public url_1:string = 'https://github.com/hnunezz';
-  public url_2:string = 'https://www.linkedin.com/in/henriquenunes27/';
+  public readonly URL_GIT:string = 'https://github.com/hnunezz';
+  public readonly URL_LINKEDIN:string = 'https://www.linkedin.com/in/henriquenunes27/';
 
   constructor( @Inject(DOCUMENT) private document: Document, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer, private router: Router) 
   {
@@ -30,12 +30,8 @@ export class PokemonMenuComponent {
 
    }
 
-  goToGithub(url_1: string): void {
-     window.open(this.url_1,"_blank");
-  }
-
-  goToLinkedin(url_2:string): void {
-     window.open(this.url_2,"_blank");
+  navigate(urlNavigate: string): void {
+     window.open(urlNavigate,"_blank");
   }
 
   goToLogin() {

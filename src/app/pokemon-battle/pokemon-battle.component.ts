@@ -14,8 +14,8 @@ export class PokemonBattleComponent{
   public Pokemons : Pokemon[] = [];
   public Aberto:boolean = false;
   public Aberto2:boolean = false;
-  public P1!:Pokemon
-  public P2!:Pokemon
+  public Pokemon1!:Pokemon
+  public Pokemon2!:Pokemon
   public result_victory1!:number;
   public result_victory2!:number;
 
@@ -35,33 +35,18 @@ export class PokemonBattleComponent{
 
    public getPokemonNumber = getPokemonNumber;
  
-
-    battle1(P1:number){
-      this.P1 = this.pokemon;
-    }
-
-    battle2(){
-      this.P2 = this.pokemon
-    }
-
-  lutar(P1:Pokemon,P2:Pokemon){
-      if(P1.atk == P2.atk)
+  FightOn(Pokemon1:Pokemon,Pokemon2:Pokemon){
+      if(Pokemon1.atk == Pokemon2.atk)
         {
-          this.result_tie = 1
           console.log("Empate")
         }
-      else if(P1.atk > P2.atk)
+      else if(Pokemon1.atk > Pokemon2.atk)
         {
-          this.result_victory1 = 1
-          this.result_victory2 = 0
-          console.log("vitoria1",P2)
+          console.log("Vitoria Pokemon 1",Pokemon1.name)
         }
       else
         {
-          this.result_victory1 = 0
-          this.result_victory2 = 1
-
-          console.log("vitoria2",P2)
+          console.log("Vitoria Pokemon 2",Pokemon2.name)
         }
     }
 
