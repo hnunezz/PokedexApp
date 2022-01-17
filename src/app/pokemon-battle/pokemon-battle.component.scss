@@ -159,3 +159,7 @@ display: none;
     box-shadow: 0 0 2em #0061b052;
     cursor: pointer;
 }
+
+.Pokemon-Painel-Selection:hover [result="1"]{
+    box-shadow: 0 0 2em green;
+}

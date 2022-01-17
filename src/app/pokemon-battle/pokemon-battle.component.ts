@@ -11,20 +11,23 @@ import { PokemonService } from 'src/services/pokemon.service';
 })
 export class PokemonBattleComponent{
 
+
+  public Popup1:boolean = false;
+  public Popup2:boolean = false;
+
   public Pokemons : Pokemon[] = [];
-  public Aberto:boolean = false;
-  public Aberto2:boolean = false;
   public Pokemon1!:Pokemon
   public Pokemon2!:Pokemon
-  public result_victory1!:number;
-  public result_victory2!:number;
 
-  public result_tie:number = 0;
+  public result_victory!:number;
+  public result_defeat!:number;
+  public result_tie!:number;
 
 
   @Input() public pokemon !: Pokemon;
   
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer,public pokemonService : PokemonService) {
+    
     iconRegistry.addSvgIcon('victory-icon',sanitizer.bypassSecurityTrustResourceUrl('assets/icon/checked-circle.svg'));
     iconRegistry.addSvgIcon('defeat-icon',sanitizer.bypassSecurityTrustResourceUrl('assets/icon/unchecked-circle.svg'));
     iconRegistry.addSvgIcon('tie-icon',sanitizer.bypassSecurityTrustResourceUrl('assets/icon/tie-circle.svg'));
@@ -35,22 +38,28 @@ export class PokemonBattleComponent{
 
    public getPokemonNumber = getPokemonNumber;
  
-  FightOn(Pokemon1:Pokemon,Pokemon2:Pokemon){
+    FightOn(Pokemon1:Pokemon,Pokemon2:Pokemon){
       if(Pokemon1.atk == Pokemon2.atk)
         {
-          console.log("Empate")
+          this.result_tie = 5
         }
       else if(Pokemon1.atk > Pokemon2.atk)
         {
-          console.log("Vitoria Pokemon 1",Pokemon1.name)
+          this.result_victory = 1;
+          this.result_defeat = 2
         }
       else
         {
-          console.log("Vitoria Pokemon 2",Pokemon2.name)
+          this.result_victory = 3;
+          this.result_defeat = 4
         }
     }
 
   data($event: any) {
     console.log($event)
+    
+    this.result_victory = 0
+    this.result_defeat = 0
+    this.result_tie = 0
   }
 }
