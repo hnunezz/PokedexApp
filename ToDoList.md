@@ -11,7 +11,7 @@
     # Funcionalidades
         //- LISTAR
         //- BUSCAR
-        - BATALHA
+        // - BATALHA
         // - RESPONSIVO
         - Adicionar botao como usar battle
 
@@ -22,8 +22,8 @@
         Funcao Mostrar Mais
         //Layout Buscar
         //Funçao Buscar
-        Layout Batalha
-        Funçao Batalha
+        // Layout Batalha
+        // Funçao Batalha
         Funcao Modo Claro/Escuro
 
     # Card
@@ -32,13 +32,13 @@
             Nome e algumas outras especificacoes
 
 
-    # Batalha
-        Pesquisar quais elementos cada elemento
-        Desenvolver probabilidade de vitoria em cima dos elemetos
-            *+ de 1 elemento contra 1 elemento deve receber a probabilidade em cima dos dois
-        Desenvolver funcionalidade de selecao e aplicar a probabilidade
-            Indicar pokemon vencedor
-        Desenvolver funcionalidade botao pokemon aleatorio  
+    //# Batalha
+        //Pesquisar quais elementos cada elemento
+        //Desenvolver probabilidade de vitoria em cima dos elemetos
+        //   *+ de 1 elemento contra 1 elemento deve receber a probabilidade em cima dos dois
+        //Desenvolver funcionalidade de selecao e aplicar a probabilidade
+        //    Indicar pokemon vencedor
+        //Desenvolver funcionalidade botao pokemon aleatorio  
 
 
 

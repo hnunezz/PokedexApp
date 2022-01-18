@@ -138,22 +138,22 @@ display: none;
 .Popup-Master2[Aberto2="false"]{
     display: none;
     }
-    .Popup-Master2[Aberto2="true"]{
-        position: absolute;
-        width: 69%;
-        min-height: 937px;
-        top: 241px;
-        left: 15%;
-        background: #ffffff;
-        border: hidden;
-    }
+.Popup-Master2[Aberto2="true"]{
+    position: absolute;
+    width: 69%;
+    min-height: 937px;
+    top: 241px;
+    left: 15%;
+    background: #ffffff;
+    border: hidden;
+}
 
 
-    .Pokemon-IMG-Selected{
-        width: 244px;
-        margin-left: 54.5px;
-        margin-right: 54.5px;
-    }
+.Pokemon-IMG-Selected{
+    width: 244px;
+    margin-left: 54.5px;
+    margin-right: 54.5px;
+}
 
 .Pokemon-card-component:hover{
     box-shadow: 0 0 2em #0061b052;
@@ -162,4 +162,47 @@ display: none;
 
 .Pokemon-Painel-Selection:hover [result="1"]{
     box-shadow: 0 0 2em green;
+}
+
+
+
+//-----------------------RESPONSIVE------------------//
+@media only screen and (max-width: 1034px) {
+    .Container-Master{
+        display: initial !important;
+    }
+    .Container-Selection1{
+        width: 70% !important;
+    }
+    .Container-Selection2{
+        width: 70% !important;
+        margin:auto !important
+    }
+    .Pokemon-Fight{
+        margin-top: -398px !important;
+        display: flow-root;
+        margin:auto;
+    }
+    .Popup-Master{
+        width: 70% !important;
+    }
+    .Popup-Master2{
+        width: 70% !important;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Popup-Master{
+        width: 77% !important;
+        top: 348px !important;
+        left: 15% !important;
+    }
+    .Popup-Master2{
+        width: 77% !important;
+        top: 348px !important;
+        left: 15% !important;
+    }
+
+
 }
