@@ -25,10 +25,13 @@
         // Layout Batalha
         // Funçao Batalha
         Funcao Modo Claro/Escuro
+        //ranking pokemon que ganha mais no mes 
 
     # Card
         Desenvolver funcionalidade para os pokemon-card-type
             Abrir uma popup mostrando a foto oficial do elemento
+            
+            //quando clicar no card do pokemon fazer a animacao ao mostrar os status, virando
             Nome e algumas outras especificacoes
 
 
@@ -37,9 +40,13 @@
         //Desenvolver probabilidade de vitoria em cima dos elemetos
         //   *+ de 1 elemento contra 1 elemento deve receber a probabilidade em cima dos dois
         //Desenvolver funcionalidade de selecao e aplicar a probabilidade
+
+        
         //    Indicar pokemon vencedor
         //Desenvolver funcionalidade botao pokemon aleatorio  
-
+        //tirar porcetagem de ataque pelo tipo
+        //mostrar status do pokemon escolhido
+        
 
 
         

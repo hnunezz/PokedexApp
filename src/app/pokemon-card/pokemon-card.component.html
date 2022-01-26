@@ -1,12 +1,32 @@
-<div class="pokemon-card" id="pokemon-card" *ngIf="pokemon">
-    <div class="pokemon-card-img">
-        <img [src]="getPokemonImage(pokemon)" [alt]="getPokemonNumber(pokemon)" draggable="false">
-    </div>
-    <div class="pokemon-card-name">
-        {{pokemon.name}}
-    </div>
-    <div class="pokemon-card-type">
-        <div class="pokemon-card-types" *ngFor="let type of pokemon.types" [class]="'pokemon-card-types-' + type.toLowerCase()">{{type}}</div>
-    </div>
-</div>
+<div class="pokemon-container flip-card">
 
+    <div class="pokemon-card flip-card-inner" id="pokemon-card" *ngIf="pokemon">
+
+        <div class="pokemon-card-front flip-card-front">
+            <div class="pokemon-card-img">
+                <img [src]="getPokemonImage(pokemon)" [alt]="getPokemonNumber(pokemon)" draggable="false">
+            </div>
+            <div class="pokemon-card-name">
+                {{pokemon.name}}
+            </div>
+            <div class="pokemon-card-type">
+                <div class="pokemon-card-types" *ngFor="let type of pokemon.types" [class]="'pokemon-card-types-' + type.toLowerCase()">{{type}}</div>
+            </div>
+        </div>
+
+        <div class="pokemon-card-back flip-card-back" style="width: 280px;">            
+            <section>
+                <!-- <h3>{{pokemon.name}}</h3> -->
+                <li *ngFor="let value of pokemon.stats">
+                    {{ value.stat.name }}
+                    
+                    <strong>
+                        {{ value.base_stat }}
+                    </strong>
+                </li>
+            </section>
+        </div>
+        
+    </div>
+    
+</div>

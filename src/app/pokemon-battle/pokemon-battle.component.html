@@ -5,7 +5,7 @@
             <div class="Pokemon-Selection">
                 <div class="Pokemon-Painel-Selection" (click)="Popup1 = !Popup1" [attr.result]="">
                     <p class="Pokemon-Painel-Selection-P" *ngIf="Pokemon1 == undefined">Selecione um Pokemon!</p>
-                    <img class="Pokemon-IMG-Selected" *ngIf="Pokemon1 != undefined" [src]="getPokemonImage(Pokemon1)" [alt]="getPokemonNumber(Pokemon1)" onselectstart="return false">
+                    <img class="Pokemon-IMG-Selected" *ngIf="Pokemon1 != undefined" [src]="getPokemonImage(Pokemon1)" [alt]="getPokemonNumber(Pokemon1)" onselectstart="return false" draggable="false">
                 </div>
                 <p *ngIf="Pokemon1 != undefined" style="text-transform: capitalize;text-align: center;font-size: 22px;padding-top: 46px;color: #4a4a4a;">{{Pokemon1.name}}</p> 
             </div>
@@ -22,7 +22,7 @@
             <div class="Pokemon-Selection" style="border-radius: 4px 4px 0px 66px;" >
                 <div class="Pokemon-Painel-Selection" style="border-radius: 4px 4px 0px 33px;" (click)="Popup2 = !Popup2">
                     <p class="Pokemon-Painel-Selection-P" *ngIf="Pokemon2 == undefined">Selecione um Pokemon!</p>
-                    <img class="Pokemon-IMG-Selected" *ngIf="Pokemon2 != undefined" [src]="getPokemonImage(Pokemon2)" [alt]="getPokemonNumber(Pokemon2)">
+                    <img class="Pokemon-IMG-Selected" *ngIf="Pokemon2 != undefined" [src]="getPokemonImage(Pokemon2)" [alt]="getPokemonNumber(Pokemon2)" draggable="false">
                 </div>
                 <p *ngIf="Pokemon2 != undefined" style="text-transform: capitalize;text-align: center;font-size: 22px;padding-top: 46px;color: #4a4a4a;">{{Pokemon2.name}}</p> 
             </div>

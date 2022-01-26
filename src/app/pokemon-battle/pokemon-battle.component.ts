@@ -39,11 +39,11 @@ export class PokemonBattleComponent{
    public getPokemonNumber = getPokemonNumber;
  
     FightOn(Pokemon1:Pokemon,Pokemon2:Pokemon){
-      if(Pokemon1.atk == Pokemon2.atk)
+      if(Pokemon1.stats[1].base_stat == Pokemon2.stats[1].base_stat)
         {
           this.result_tie = 5
         }
-      else if(Pokemon1.atk > Pokemon2.atk)
+      else if(Pokemon1.stats[1].base_stat > Pokemon2.stats[1].base_stat)
         {
           this.result_victory = 1;
           this.result_defeat = 2
