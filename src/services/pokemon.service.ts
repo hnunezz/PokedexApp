@@ -30,6 +30,5 @@ export class PokemonService {
       types: result.types.map((t:any) => t.type.name),
       stats: result.stats
     });
-    console.log(this.pokemons)
   }
 }

@@ -17,6 +17,7 @@ $primary: #0062b0;
     background: linear-gradient(red 50%, $white 50%);
     border: solid 2px $black;
     animation: fadeIn 2s;
+    cursor: pointer;
 }
 
 @keyframes fadeIn 

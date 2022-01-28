@@ -37,10 +37,17 @@
 <div class="Popup-Master" [attr.Aberto]="Popup1">   
        <mat-icon svgIcon="close" class="Popup-Close" (click)="Popup1 = !Popup1"></mat-icon>
    <div class="Popup-Body">
-    <div class="Pokemon-list-class" style="width: 100%;
-    display: flex;
-    flex-wrap: wrap;" >
-        <app-pokemon-card (click)="data(Pokemon1 = pokemon)" (click)="Popup1 = !Popup1" class="Pokemon-card-component" *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px;"></app-pokemon-card>
+    <div class="Pokemon-list-class" style="width: 100%;display: flex;flex-wrap: wrap;" >
+        <div (click)="data(Pokemon1 = pokemon)" (click)="Popup1 = !Popup1" class="Pokemon-card-component-battle" *ngFor="let pokemon of pokemonService.pokemons" pokemon="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px;">
+                <div class="pokemon-card-battle" *ngIf="pokemon">
+                        <div class="pokemon-card-img-battle">
+                            <img [src]="getPokemonImage(pokemon)" [alt]="getPokemonNumber(pokemon)" draggable="false">
+                        </div>
+                        <div class="pokemon-card-name-battle">
+                            {{pokemon.name}}
+                        </div>       
+                </div>
+        </div>
     </div>
    </div>
 
@@ -48,14 +55,20 @@
 
 <div class="Popup-Master2" [attr.Aberto2]="Popup2">   
         <mat-icon svgIcon="close" class="Popup-Close" (click)="Popup2 = !Popup2" ></mat-icon>
-    <div class="Popup-Body">
-     <div class="Pokemon-list-class" style="width: 100%;
-     display: flex;
-     flex-wrap: wrap;" >
-         <app-pokemon-card  (click)="data(Pokemon2 = pokemon)" (click)="Popup2 = !Popup2" class="Pokemon-card-component" *ngFor="let pokemon of pokemonService.pokemons" [pokemon]="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px;"></app-pokemon-card>
-     </div>
-    </div>
- 
+            <div class="Popup-Body">
+                <div class="Pokemon-list-class" style="width: 100%;display: flex;flex-wrap: wrap;" >
+                    <div (click)="data(Pokemon2 = pokemon)" (click)="Popup2 = !Popup2" class="Pokemon-card-component-battle" *ngFor="let pokemon of pokemonService.pokemons" pokemon="pokemon" onselectstart="return false" style="margin: auto;width: 212px !important;margin-block-end: 10px;margin-top: 20px; ">
+                            <div class="pokemon-card-battle" *ngIf="pokemon">
+                                    <div class="pokemon-card-img-battle">
+                                        <img [src]="getPokemonImage(pokemon)" [alt]="getPokemonNumber(pokemon)" draggable="false">
+                                    </div>
+                                    <div class="pokemon-card-name-battle">
+                                        {{pokemon.name}}
+                                    </div>       
+                        </div> 
+                    </div>
+                </div>
+            </div>
  </div>
 
 <app-pokemon-menu></app-pokemon-menu>

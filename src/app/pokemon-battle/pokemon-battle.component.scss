@@ -10,15 +10,12 @@
 .Container-Selection1{
     width: 30%;
     height: 100%;
-    //background: blue;
     margin-left: 15%;
     margin-right: 5%;
 }
 .Container-Selection2{
     width: 30%;
     height: 100%;
-    //background: #89ff08;
-    /* float: right; */
     margin-right: 15%;
     margin-left: 5%;
 }
@@ -155,15 +152,44 @@ display: none;
     margin-right: 54.5px;
 }
 
-.Pokemon-card-component:hover{
+.Pokemon-Painel-Selection:hover [result="1"]{
+    box-shadow: 0 0 2em green;
+}
+.pokemon-card-img-battle img{
+    width:180px;
+    height: 180px;
+}
+
+//-----------------------POKEMON LIST------------------// 
+
+.Pokemon-card-component-battle:hover{
     box-shadow: 0 0 2em #0061b052;
     cursor: pointer;
 }
 
-.Pokemon-Painel-Selection:hover [result="1"]{
-    box-shadow: 0 0 2em green;
+
+.pokemon-card-battle{
+    font-family: "Signika", Arial, sans-serif;
+    width: 100% !important;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color: #F2F2F2;
+    border-radius: 6px;
+    text-align: center;
+
 }
 
+
+.pokemon-card-name-battle{
+    padding: 5px 20px;
+    color: #313131;
+    font-size: 145%;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+//-----------------------POKEMON LIST------------------// 
 
 
 //-----------------------RESPONSIVE------------------//
