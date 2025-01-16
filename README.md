@@ -50,4 +50,10 @@ Developed in TS, JS and Angular13
 
 
 
+![image](https://github.com/user-attachments/assets/d9aff663-7be3-49ec-86b9-8a60b550fc77)
+![image](https://github.com/user-attachments/assets/d2329d0d-f03e-4039-8c2f-ae9e1d4ac8f1)
+![image](https://github.com/user-attachments/assets/a7d3747c-c62d-4a0a-9dfe-67c527c81386)
+![image](https://github.com/user-attachments/assets/65d9992b-cfce-42dc-b2a6-bd96e40b8b52)
+
+![image](https://github.com/user-attachments/assets/1f851dd6-28d0-440e-9351-21fd8e4df2e2)
 
